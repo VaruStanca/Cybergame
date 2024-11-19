@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cybersecurity: Two Truths and a Lie</h1>
+
+    <!-- Name Input Form -->
+    <div id="name-input">
+      <p>Enter your name to start the game:</p>
+      <input type="text" id="player-name" placeholder="Your Name" />
+      <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Progress and Game Area -->
+    <p id="progress"></p>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div id="game" style="display: none;">
+      <p id="question"></p>
+      <button class="answer" data-id="1"></button>
+      <button class="answer" data-id="2"></button>
+      <button class="answer" data-id="3"></button>
+    </div>
+
+    <!-- Result and Scoreboard -->
+    <p id="result"></p>
+    <div id="scoreboard" style="display: none;">
+      <h2>Scoreboard</h2>
+      <ul id="score-list"></ul>
+      <button onclick="clearScoreboard()">Clear Scoreboard</button> <!-- New Clear Scoreboard Button -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
